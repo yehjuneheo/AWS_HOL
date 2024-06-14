@@ -66,3 +66,7 @@
 * When I went back to the PROD account, I didn’t have access to the S3 policy
 ![unnamed (20)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/6c2f07a4-20ed-4146-8a63-e7b52920e738)
 
+### What I Learned
+* I can use AWS Organizations to switch back effectively between different accounts.
+* SCPs can be used to restrict the access level of specific accounts or OUs.
+
