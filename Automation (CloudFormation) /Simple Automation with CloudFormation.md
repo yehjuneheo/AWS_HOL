@@ -16,3 +16,7 @@
 
 *  I can run session manager on the EC2 instance since it was configured with specific permissions to allow using it from the template
 *  Deleting the stack deletes the stack itself along with the corresponding resources.
+
+### What I Learned
+* I can manually change the parameters defined in the templates from the portal.
+* I can view the key outputs like AZ, PublicDNS, or PublicIP.
