@@ -25,7 +25,7 @@
 * After running stress, the alarm is in the in-alarm state
 ![unnamed (46)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/7c96bcae-2e1b-46aa-b853-df72840ee12a)
 
-#### What I Learnt
+#### What I Learned
 * I learnt that I need to enable Detailed CloudWatch monitoring from the EC2 instance to monitor CPU utilization
 * I can configure various automatic actions based on the alarms.
 * I can use the stress package from EC2 Instance Connect to check if the alarm is working well.
