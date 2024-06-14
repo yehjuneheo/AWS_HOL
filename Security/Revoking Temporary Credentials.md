@@ -30,4 +30,7 @@
 * This means my EC2 instances don’t have access as well. So I stopped the instances and started.
 * Now the EC2 instances still have access to the AWS Resources, while the attacker doesn’t.
 
+### What I Learned
+* Instead of deleting or changing permissions to the IAM Role when it is leaked, I should revoke the temporary credentials.
+* I need to stop and start the instances related to the IAM Role so that they can use the new credentials for operating.
 
