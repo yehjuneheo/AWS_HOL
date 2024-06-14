@@ -19,3 +19,6 @@
 * I had to move the .pem file to the local directory where I am running the cmd to successfully connect to the instance.
 ![unnamed (32)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/7011f35c-489c-442f-87c5-2e2f760dbd65)
 
+### What I Learned
+* I need to create key pairs to manage EC2 instances from my ssh command line.
+* It is good practice to name security groups.
