@@ -46,7 +46,7 @@ This shows it is downloaded correctly
 * If the secret access key is leaked, you can regenerate it
 * I did the same configuration settings for the IAMADMIN production account
 
-### What I Learnt
+### What I Learned
 * For every admin-level account, MFA should be enabled
 * You should always avoid using the root account and use IAMADMIN instead
 * Secret keys can be regenerated and you need to change the configuration after changing it
