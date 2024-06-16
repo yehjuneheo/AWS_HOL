@@ -1,4 +1,4 @@
-#### This section covers about using S3 versioning.
+#### This section covers about using S3 versioning and object encryption for role separation.
 
 ## S3 Versioning
 * First I created a new bucket with unchecked ‘Block all public access’ and enabled bucket versioning.
