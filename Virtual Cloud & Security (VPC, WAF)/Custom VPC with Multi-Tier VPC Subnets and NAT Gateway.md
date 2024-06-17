@@ -1,4 +1,4 @@
-#### This section covers about creating a custom vpc and associating multi-tier VPC subnets. Then I will configure public subnets and a jumpbox along with private internet access using NAT Gateway.
+#### This section covers about creating a custom vpc and associating multi-tier VPC subnets. Then I will configure public subnets and a jumpbox.
 
 ## Creating Custom VPC
 * First I went to the VPC console and created a new VPC:
