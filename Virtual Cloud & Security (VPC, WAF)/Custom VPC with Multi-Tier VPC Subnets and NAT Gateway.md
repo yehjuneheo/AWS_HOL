@@ -38,8 +38,29 @@ sn-web-C 10.16.176.0/20 AZC IPv6 0B
 
 * I created the internet gateway but I need to manually attach them to my VPC.
 ![unnamed (17)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/d57bcdc0-9724-4701-9890-658d30bd201d)
+![unnamed (18)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/8851d161-c8f6-45bc-bcc1-942bed9b0134)
 
+* To configure the web subnets to successfully communicate with the public internet, we need to first configure the route table.
+![unnamed (19)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/7f339f62-c07b-4ac9-a9f4-829dc2b5c8ab)
+![unnamed (20)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/5d6c0634-bd17-4a39-9c5a-468b966af7c1)
 
+* Now I need to edit the subnet associations for the route table. If I don’t edit it, the subnets are routed to the main route table by default.
+![unnamed (21)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/05a216bd-b0cf-4ecf-802d-953bc376b13a)
+![unnamed (22)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/ec67d9fd-a4e2-4dec-aba0-5e000e6efded)
 
+* I also edited routes so that any IP that doesn’t destine to any specific CIDR range routes to the internet gateway.
+![unnamed (23)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/7cfa95a4-0a56-412c-9ff2-a14757647bd6)
+![unnamed (24)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/14ecf5ae-16d7-4b85-a948-ea0bb37396e3)
+* Then for each web subnet, I enabled auto-assign public IPv4 address
 
+* Now to test the configuration, I am going to launch an EC2 instance inside the web subnets.
+* I created a new EC2 instance with everything default except network settings to be A4L VPC and to be in the sn-web-A subnet.
+![unnamed (25)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/a6aec819-9c93-46c4-8b45-5fed553642c1)
+
+* Now I can connect to the EC2 instance using SSH from my local computer.
+![unnamed (26)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/9dbffce8-228a-4811-8c51-83ba16adea0b)
+
+### What I Learned
+* I need to enable auto-assign public IPv4 address so that IP addresses can be routed to the public through the internet gateway.
+* I can manually enter the CIDR range that I want to use for each subnet.
 
