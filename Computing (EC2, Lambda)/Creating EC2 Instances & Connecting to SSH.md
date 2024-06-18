@@ -1,4 +1,4 @@
-#### This section covers about creating EC2 instances and connecting it to SSH
+#### This section covers about creating EC2 instances, connecting it to SSH, and accessing instance metadata.
 
 ## Creating EC2 Instances
 * First, we need to create an SSH key pair, for accessing the EC2 instances
@@ -19,6 +19,18 @@
 * I had to move the .pem file to the local directory where I am running the cmd to successfully connect to the instance.
 ![unnamed (32)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/7011f35c-489c-442f-87c5-2e2f760dbd65)
 
+
+## Accessing Instance Metadata
+* First I used the CloudFormation template provided by learn.cantrill.io to automate building the required resources.
+* Then I connected to the created EC2 instance using Instance Connect.
+![unnamed (53)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/63c0e04c-37cf-43b5-95c4-242cf2f78726)
+
+* To access the metadata, we can use curl or download it using wget:
+![unnamed (54)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/bc920392-93e9-4221-96af-a09d27fa13dd)
+![unnamed (55)](https://github.com/yehjuneheo/AWS_HOL/assets/51499085/b690fca7-13aa-4183-8390-64f7c4f7588d)
+
+
 ### What I Learned
 * I need to create key pairs to manage EC2 instances from my ssh command line.
 * It is good practice to name security groups.
+* I can download the instance meta data and access it easily instead of using the curl command.
