@@ -1,0 +1,1 @@
+#### In this project, I will start with a monolithic web application, migrate the database to RDS, provision an EFS file system, and finally provision an auto-scaling group with an elastic load balancer.
