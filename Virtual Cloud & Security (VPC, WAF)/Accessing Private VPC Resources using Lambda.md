@@ -1,4 +1,4 @@
-#### This section covers about using a Lambda function running inside a VPC to extend the storage available of EFS.
+#### This section covers about using accessing a private elastic file system using Lambda.
 
 ## VPC Lambda & Elastic File System
 * This is the architecture that I will be implementing in this lab:
