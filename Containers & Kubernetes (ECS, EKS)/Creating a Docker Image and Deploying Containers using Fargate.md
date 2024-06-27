@@ -1,4 +1,4 @@
-### This section covers about creating a docker image.
+### This section covers about creating a docker image and deploying it using a ECS Fargate.
 
 ## Creating a Docker Image
 * First I used the CloudFormation template provided by learn.cantrill.io to automate building the required resources.
